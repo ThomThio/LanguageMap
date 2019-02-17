@@ -1,0 +1,64 @@
+body {
+  font-family: 'Architects Daughter', cursive;
+  background-color: white;
+}
+
+.link{
+  color: black;
+}
+
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  background: honeydew;
+  font: 16px sans-serif;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 8px;
+  pointer-events: none; /* keep the mouseover when over the tooltip */
+}
+
+svg{
+  position: relative;
+  /*background-color: #000000;*/
+  z-index:0;
+}
+
+#controls{
+  position: absolute;
+  top:10px;
+  left:10px;
+  z-index:1;
+  color:white;
+}
+
+#id2{
+  position: absolute;
+  bottom:10px;
+  left:10px;
+  font-size:26px;
+  z-index:1;
+  color:red;
+}
+  
+img{
+  position: absolute;
+  top:10px;
+  right:-60px;
+  z-index:1;
+  height:70px
+}
+
+button, input{
+    display: inline-block;
+}
+
+.nodes, .labels:hover{
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover{
+ cursor: pointer;
+}
